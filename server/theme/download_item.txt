@@ -1,0 +1,7 @@
+{{ item.slugline }}
+{{ item.headline }}
+{{ item.source }}
+{{ item.versioncreated | date_short }}
+{% if item.byline %}By: {{ item.byline }}{% endif %}
+
+{{ item.body_html | plain_text }}
