@@ -1,6 +1,10 @@
 import pathlib
 
-from newsroom.web.default_settings import CELERY_BEAT_SCHEDULE as CELERY_BEAT_SCHEDULE_DEFAULT, CORE_APPS as _CORE_APPS
+from newsroom.web.default_settings import (
+    CELERY_BEAT_SCHEDULE as CELERY_BEAT_SCHEDULE_DEFAULT,
+    CORE_APPS as DEFAULT_CORE_APPS,
+    BLUEPRINTS as DEFAULT_BLUEPRINTS,
+)
 
 
 SERVER_PATH = pathlib.Path(__file__).resolve().parent
@@ -24,30 +28,26 @@ WIRE_AGGS = {
 
 WIRE_GROUPS = []
 
+
 BLUEPRINTS = [
-    'newsroom.wire',
-    'newsroom.auth',
-    'newsroom.users',
-    'newsroom.companies',
-    'newsroom.design',
-    'newsroom.history',
-    'newsroom.push',
-    'newsroom.topics',
-    'newsroom.upload',
-    'newsroom.notifications',
-    'newsroom.products',
-    'newsroom.section_filters',
-    'newsroom.navigations',
-    'newsroom.cards',
-    'newsroom.reports',
-    'newsroom.public',
-    'newsroom.settings',
-    'newsroom.agenda',
+    blueprint
+    for blueprint in DEFAULT_BLUEPRINTS
+    if blueprint not in [
+        "newsroom.design",
+        "newsroom.monitoring",
+        "newsroom.news_api.api_tokens"
+    ]
 ]
 
 CORE_APPS = [
-    app for app in _CORE_APPS
-    if 'news_api' not in app
+    app
+    for app in DEFAULT_CORE_APPS
+    if app not in [
+        "newsroom.monitoring",
+        "newsroom.news_api",
+        "newsroom.news_api.api_tokens",
+        "newsroom.news_api.api_audit",
+    ]
 ]
 
 COVERAGE_TYPES = {
