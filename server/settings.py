@@ -1,6 +1,6 @@
 import pathlib
 
-from newsroom.web.default_settings import CELERY_BEAT_SCHEDULE as CELERY_BEAT_SCHEDULE_DEFAULT
+from newsroom.web.default_settings import CELERY_BEAT_SCHEDULE as CELERY_BEAT_SCHEDULE_DEFAULT, CORE_APPS as _CORE_APPS
 
 
 SERVER_PATH = pathlib.Path(__file__).resolve().parent
@@ -46,30 +46,8 @@ BLUEPRINTS = [
 ]
 
 CORE_APPS = [
-    'superdesk.notification',
-    'content_api.items',
-    'content_api.items_versions',
-    'content_api.search',
-    'content_api.auth',
-    'content_api.publish',
-    'newsroom.users',
-    'newsroom.companies',
-    'newsroom.wire',
-    'newsroom.topics',
-    'newsroom.upload',
-    'newsroom.history',
-    'newsroom.ui_config',
-    'newsroom.notifications',
-    'newsroom.products',
-    'newsroom.section_filters',
-    'newsroom.navigations',
-    'newsroom.cards',
-    'newsroom.reports',
-    'newsroom.public',
-    'newsroom.settings',
-    'newsroom.photos',
-    'newsroom.media_utils',
-    'newsroom.agenda',
+    app for app in _CORE_APPS
+    if 'news_api' not in app
 ]
 
 COVERAGE_TYPES = {
