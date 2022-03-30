@@ -45,7 +45,7 @@ BLUEPRINTS = [
     'newsroom.agenda',
 ]
 
-_CORE_APPS = [
+CORE_APPS = [
     'superdesk.notification',
     'content_api.items',
     'content_api.items_versions',
