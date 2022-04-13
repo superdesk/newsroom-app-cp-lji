@@ -33,6 +33,7 @@ BLUEPRINTS = [
     blueprint
     for blueprint in DEFAULT_BLUEPRINTS
     if blueprint not in [
+        "newsroom.agenda",
         "newsroom.design",
         "newsroom.monitoring",
         "newsroom.news_api.api_tokens"
@@ -43,6 +44,7 @@ CORE_APPS = [
     app
     for app in DEFAULT_CORE_APPS
     if app not in [
+        "newsroom.agenda",
         "newsroom.monitoring",
         "newsroom.news_api",
         "newsroom.news_api.api_tokens",
