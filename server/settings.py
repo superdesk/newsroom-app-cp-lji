@@ -1,4 +1,5 @@
 import pathlib
+from flask_babel import lazy_gettext
 
 from newsroom.web.default_settings import (
     CELERY_BEAT_SCHEDULE as CELERY_BEAT_SCHEDULE_DEFAULT,
@@ -22,11 +23,17 @@ CONTACT_ADDRESS = 'https://www.thecanadianpress.com/contact/'
 CONTACT_ADDRESS_EN = 'https://www.thecanadianpress.com/contact/'
 
 WIRE_AGGS = {
+    'language': {'terms': {'field': 'language', 'size': 50}},
     'service': {'terms': {'field': 'service.name', 'size': 50}},
     'subject': {'terms': {'field': 'subject.name', 'size': 20}},
 }
 
-WIRE_GROUPS = []
+WIRE_GROUPS = [
+    {
+        "field": "language",
+        "label": lazy_gettext("Language"),
+    },
+]
 
 
 BLUEPRINTS = [
