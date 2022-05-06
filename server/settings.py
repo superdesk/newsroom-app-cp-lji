@@ -104,6 +104,10 @@ CLIENT_CONFIG = {
     'topic_actions': {
         'share': False,
     },
+    'filter_panel_defaults': {
+        'tab': {'wire': 'filters'},
+        'open': {'wire': True},
+    },
 }
 
 WATERMARK_IMAGE = None
