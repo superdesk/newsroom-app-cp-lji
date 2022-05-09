@@ -1,0 +1,126 @@
+[
+    {
+        "_id": "wire",
+        "init_version": 1,
+        "preview": {
+            "slugline": {
+                "displayed": true
+            },
+            "category": {
+                "displayed": false
+            },
+            "subject": {
+                "displayed": true
+            },
+            "authors": {
+                "displayed": false
+            },
+            "metadata_fields": [
+              "urgency",
+              "source",
+              "wordcount",
+              "previous_versions",
+              "embargo"
+            ]
+        },
+        "details": {
+            "slugline": {
+                "displayed": true
+            },
+            "category": {
+                "displayed": false
+            },
+            "subject": {
+                "displayed": true
+            },
+            "authors": {
+                "displayed": false
+            },
+            "metadata_fields": [
+              "urgency",
+              "source",
+              "wordcount",
+              "previous_versions",
+              "embargo"
+            ]
+        },
+        "list": {
+            "highlights": {
+                "urgency": ["#C20000", "#865F02"]
+            },
+            "metadata_fields": [
+              "embargo",
+              "source",
+              "//",
+              "wordcount",
+              "//",
+              "versioncreated"
+            ]
+        },
+        "advanced_search_tabs": {},
+        "multi_select_topics": false,
+        "enable_global_topics": true
+    },
+    {
+        "_id": "home",
+        "init_version": 4,
+        "list": {
+            "wordcount": {
+                "displayed": true
+            },
+            "charcount": {
+                "displayed": false
+            },
+            "slugline": {
+                "displayed": true
+            },
+            "metadata_fields": [
+              "embargo",
+              "source",
+              "//",
+              "wordcount",
+              "//",
+              "versioncreated"
+            ]
+
+        },
+        "preview": {
+            "slugline": {
+                "displayed": true
+            },
+            "metadata_fields": [
+              "urgency",
+              "source",
+              "wordcount",
+              "previous_versions",
+              "embargo"
+            ]
+        },
+        "details": {
+            "wordcount": {
+                "displayed": true
+            },
+            "charcount": {
+                "displayed": false
+            },
+            "slugline": {
+                "displayed": true
+            },
+            "metadata_fields": [
+              "urgency",
+              "source",
+              "wordcount",
+              "previous_versions",
+              "embargo"
+            ]
+        },
+        "search": true
+    },
+    {
+        "_id": "agenda",
+        "init_version": 2,
+        "multi_select_topics": false,
+        "open_coverage_content_in_same_page": true,
+        "enable_global_topics": true
+    }
+]
