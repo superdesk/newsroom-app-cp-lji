@@ -96,6 +96,7 @@ CLIENT_CONFIG = {
     'locale_formats': CLIENT_LOCALE_FORMATS,
     'coverage_types': COVERAGE_TYPES,
     'display_abstract': DISPLAY_ABSTRACT,
+    'display_all_versions_toggle': False,
     'list_animations': True,  # Enables or disables the animations for list item select boxes,
     'display_news_only': False,  # Displays news only switch in wire
     'item_actions': {
