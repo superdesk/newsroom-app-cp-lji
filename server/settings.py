@@ -97,6 +97,7 @@ CLIENT_CONFIG = {
     'coverage_types': COVERAGE_TYPES,
     'display_abstract': DISPLAY_ABSTRACT,
     'display_all_versions_toggle': False,
+    'hide_company_topics_feature': True,
     'list_animations': True,  # Enables or disables the animations for list item select boxes,
     'display_news_only': False,  # Displays news only switch in wire
     'item_actions': {
