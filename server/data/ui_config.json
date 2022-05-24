@@ -1,7 +1,7 @@
 [
     {
         "_id": "wire",
-        "init_version": 1,
+        "init_version": 2,
         "preview": {
             "slugline": {
                 "displayed": true
@@ -59,7 +59,7 @@
         },
         "advanced_search_tabs": {},
         "multi_select_topics": false,
-        "enable_global_topics": true
+        "enable_global_topics": false
     },
     {
         "_id": "home",
@@ -118,9 +118,9 @@
     },
     {
         "_id": "agenda",
-        "init_version": 2,
+        "init_version": 3,
         "multi_select_topics": false,
         "open_coverage_content_in_same_page": true,
-        "enable_global_topics": true
+        "enable_global_topics": false
     }
 ]
