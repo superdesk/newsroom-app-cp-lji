@@ -59,7 +59,7 @@
         },
         "advanced_search_tabs": {},
         "multi_select_topics": false,
-        "enable_global_topics": true
+        "enable_global_topics": false
     },
     {
         "_id": "home",
@@ -121,6 +121,6 @@
         "init_version": 2,
         "multi_select_topics": false,
         "open_coverage_content_in_same_page": true,
-        "enable_global_topics": true
+        "enable_global_topics": false
     }
 ]
