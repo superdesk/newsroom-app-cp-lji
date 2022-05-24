@@ -73,7 +73,7 @@ COVERAGE_TYPES = {
     'video_explainer': {'name': 'Video Explainer', 'icon': 'explainer'}
 }
 
-DISPLAY_ABSTRACT = False
+DISPLAY_ABSTRACT = True
 
 CLIENT_LOCALE_FORMATS = {
     "en": {  # defaults
