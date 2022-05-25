@@ -43,6 +43,8 @@ jobs:
       - name: behave
         run: behave --format progress2 --logging-level=ERROR
 
+      - name: init
+        run: python manage.py initialize_data
 
   client:
     runs-on: ubuntu-latest
