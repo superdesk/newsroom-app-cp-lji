@@ -63,30 +63,19 @@
     },
     {
         "_id": "home",
-        "init_version": 4,
-        "list": {
-            "wordcount": {
-                "displayed": true
-            },
-            "charcount": {
-                "displayed": false
-            },
-            "slugline": {
-                "displayed": true
-            },
-            "metadata_fields": [
-              "embargo",
-              "source",
-              "//",
-              "wordcount",
-              "//",
-              "versioncreated"
-            ]
-
-        },
+        "init_version": 5,
         "preview": {
             "slugline": {
                 "displayed": true
+            },
+            "category": {
+                "displayed": false
+            },
+            "subject": {
+                "displayed": true
+            },
+            "authors": {
+                "displayed": false
             },
             "metadata_fields": [
               "urgency",
@@ -97,14 +86,17 @@
             ]
         },
         "details": {
-            "wordcount": {
-                "displayed": true
-            },
-            "charcount": {
-                "displayed": false
-            },
             "slugline": {
                 "displayed": true
+            },
+            "category": {
+                "displayed": false
+            },
+            "subject": {
+                "displayed": true
+            },
+            "authors": {
+                "displayed": false
             },
             "metadata_fields": [
               "urgency",
@@ -112,6 +104,19 @@
               "wordcount",
               "previous_versions",
               "embargo"
+            ]
+        },
+        "list": {
+            "highlights": {
+                "urgency": ["#C20000", "#865F02"]
+            },
+            "metadata_fields": [
+              "embargo",
+              "source",
+              "//",
+              "wordcount",
+              "//",
+              "versioncreated"
             ]
         },
         "search": true
