@@ -1,10 +1,13 @@
 [
     {
         "_id": "wire",
-        "init_version": 2,
+        "init_version": 3,
         "preview": {
             "slugline": {
                 "displayed": true
+            },
+            "abstract": {
+                "displayed": false
             },
             "category": {
                 "displayed": false
@@ -27,6 +30,9 @@
             "slugline": {
                 "displayed": true
             },
+            "abstract": {
+                "displayed": false
+            },
             "category": {
                 "displayed": false
             },
@@ -47,6 +53,9 @@
         "list": {
             "highlights": {
                 "urgency": ["#C20000", "#865F02"]
+            },
+            "abstract": {
+                "displayed": true
             },
             "metadata_fields": [
               "embargo",
@@ -63,10 +72,13 @@
     },
     {
         "_id": "home",
-        "init_version": 5,
+        "init_version": 6,
         "preview": {
             "slugline": {
                 "displayed": true
+            },
+            "abstract": {
+                "displayed": false
             },
             "category": {
                 "displayed": false
@@ -89,6 +101,9 @@
             "slugline": {
                 "displayed": true
             },
+            "abstract": {
+                "displayed": false
+            },
             "category": {
                 "displayed": false
             },
@@ -109,6 +124,9 @@
         "list": {
             "highlights": {
                 "urgency": ["#C20000", "#865F02"]
+            },
+            "abstract": {
+                "displayed": true
             },
             "metadata_fields": [
               "embargo",
