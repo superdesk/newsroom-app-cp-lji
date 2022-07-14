@@ -56,3 +56,11 @@
         max-width: none;
     }
 }
+
+.page-terms p {
+    margin-bottom: 3rem;
+}
+
+.page-terms h1, .page-terms h2, .page-terms h3 {
+    margin-bottom: 1.5rem;
+}
